@@ -32,7 +32,8 @@ def getNote(line):
 	return note
 
 print("What database would you like to parse?")
-database_file = input()
+print("database/", end="")
+database_file = input().split()[0]
 if database_file[-5:] == ".json":
 	database_file = database_file[:-5]
 try:

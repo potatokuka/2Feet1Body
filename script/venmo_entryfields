@@ -1,0 +1,9 @@
+payment.note
+payment.target.user.username
+payment.target.user.display_name
+payment.target.user.first_name
+payment.target.user.last_name
+payment.actor.username
+payment.actor.display_name
+payment.actor.first_name
+payment.actor.last_name

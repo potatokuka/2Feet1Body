@@ -27,8 +27,8 @@ fi
 search () {
 	printf "Searching through the dataset for $CYAN$1$RESET...\n"
 	mongo --eval "db.venmo.aggregate([{\$match: {'payment.note': \"$1\"}},{'\$out': 'collection_$1'}])" test
-	mongoexport --collection=collection_$1 --db=test --out=venmo_$1.json --fieldFile=venmo_entryfields
-	echo "Results have been succesfully exported to venmo_$1.json!"
+	mongoexport --collection=collection_$1 --db=test --out=../database/venmo_$1.json --fieldFile=venmo_entryfields
+	echo "Results have been succesfully exported to ../database/venmo_$1.json!"
 }
 
 print_help () {

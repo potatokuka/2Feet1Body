@@ -18,16 +18,16 @@ Our given dataset came from [this](https://github.com/sa7mon/venmo-data) Venmo d
 ## Usage
 To use this tool you will need to install [MongoDB](https://www.mongodb.com/) first, this will be used to locally run the Venmo database.
 
-After downloading the database from [venmo-data](https://github.com/sa7mon/venmo-data) you can run the `venmo_search.sh` as follows:
+After downloading the database from [venmo-data](https://github.com/sa7mon/venmo-data) you can run `script/venmo_search.sh` as follows:
 ```bash
 ./venmo_search.sh <search_value>
 ```
 
-After you can run the [python script](https://github.com/potatokuka/Operation_Onymous/blob/main/src/json_parse.py) this will ask you to specify a database file.
+After that you can run `src/parse_database.py` this will ask you to specify a database file.
 ```bash
-Operation_Onymous/src ❯ python3 json_parse.py
+Operation_Onymous/src ❯ python3 parse_database.py
 What database would you like to parse?
-<database_name>
+database/<database_name>
 ```
 
 you do not have to include the `.json` extention when declaring the database name.

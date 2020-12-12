@@ -1,8 +1,10 @@
 ### How can you contribute?
-The best way to contribute is to use this project as a tool for your own research.
+The best way to contribute is to use this project for your own research.
 
-### How Can You Help?
-The best way users can contribute is by tagging @venmo with #privatebydefault
+The resources found in this repo can be used to:
+ - Perform your own research on the Venmo database.
+ - Personalize Spear Phishing-attacks for ethical hackers.
+ - Gather data for personalized advertisements.
 
-### How We Can Help You?
-You can intigrate our tool in your work flow
+### How can you help?
+The best way users can help is by tagging @venmo on twitter using [#privatebydefault]()

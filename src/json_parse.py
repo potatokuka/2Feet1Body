@@ -42,4 +42,3 @@ for i in fields:
 		print("{:<50} {:<50} {:<16}".format((actorUser + " (" + actorName + ")"), (targetUser + " (" + targetName + ")"), note))
 	else:
 		print("{:<50} {:<50} {:<16}".format((targetUser + " (" + targetName + ")"), (actorUser + " (" + actorName + ")"), note))
-print(max(people))

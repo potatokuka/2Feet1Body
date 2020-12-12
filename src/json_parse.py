@@ -31,7 +31,7 @@ def getNote(line):
 		note = "NULL"
 	return note
 
-fields = open("feetpics.json", "r").read().split("\n")
+fields = open("../database/filtered_database.json", "r").read().split("\n")
 print("{:<50} {:<50} {:<16}".format("BUYER", "SELLER", "NOTE"), end="\n\n")
 for i in fields:
 	jsonLine = json.loads(i)
@@ -42,3 +42,4 @@ for i in fields:
 		print("{:<50} {:<50} {:<16}".format((actorUser + " (" + actorName + ")"), (targetUser + " (" + targetName + ")"), note))
 	else:
 		print("{:<50} {:<50} {:<16}".format((targetUser + " (" + targetName + ")"), (actorUser + " (" + actorName + ")"), note))
+print(max(people))

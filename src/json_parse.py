@@ -31,7 +31,15 @@ def getNote(line):
 		note = "NULL"
 	return note
 
-fields = open("../database/filtered_database.json", "r").read().split("\n")
+print("What database would you like to parse?")
+database_file = input()
+if database_file[-5:] == ".json":
+	database_file = database_file[:-5]
+try:
+	fields = open("../database/" + database_file + ".json", "r").read().split("\n")
+except:
+	print("Invalid file")
+	quit()
 print("{:<50} {:<50} {:<16}".format("BUYER", "SELLER", "NOTE"), end="\n\n")
 for i in fields:
 	jsonLine = json.loads(i)

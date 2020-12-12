@@ -3,3 +3,6 @@ The best way to contribute is to use this project as a tool for your own researc
 
 ### How Can You Help?
 The best way users can contribute is by tagging @venmo with #privatebydefault
+
+### How We Can Help You?
+You can intigrate our tool in your work flow
